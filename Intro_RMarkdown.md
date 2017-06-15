@@ -21,10 +21,7 @@ This workshop has been largely inspired by the fantastic resources available at 
 ## What is Markdown and R Markdown?
 Markdown is a coding language that allows for text-to-HTML conversion. It was originally designed for web developers to allow for editing of web pages with an easy-to-read and easy-to-write plain text format. This webpage has been written in Markdown and then github has rendered this to allow you to view it as a webpage. You can see the original Markdown code [here](https://raw.githubusercontent.com/SophieS9/SG-RMarkdown-Intro/master/Intro_RMarkdown.md). Due to it's basic nature, you need none to very little programming knowledge in order to write in Markdown! 
 
-R Markdown is a variation on Markdown allowing it to be implemented in R. This video gives a great, short explanation of R Markdown:
-
-<iframe src="https://player.vimeo.com/video/178485416?color=428bca&title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/178485416">What is R Markdown?</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+R Markdown is a variation on Markdown allowing it to be implemented in R. This [video](https://vimeo.com/177254549) gives a great, short explanation of R Markdown.
 
 ## Using R Markdown in R Studio
 
