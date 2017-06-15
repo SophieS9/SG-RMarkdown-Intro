@@ -40,7 +40,7 @@ install.packages("rmarkdown")
 You should now be able to open a new R Markdown file. To do this go to the "Open" symbol in the top left hand corner and select "R Markdown"
 
 <p align=center>
-<img src="./Images/Open_Markdown.png">
+<img src="../Images/Open_Markdown.png">
 </p>
 
 ## Code Blocks and Plots
