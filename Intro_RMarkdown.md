@@ -23,7 +23,25 @@ Markdown is a coding language that allows for text-to-HTML conversion. It was or
 
 R Markdown is a variation on Markdown allowing it to be implemented in R. This [video](https://vimeo.com/177254549) gives a great, short explanation of R Markdown.
 
-## Using R Markdown in R Studio
+## Using R Markdown in RStudio
+The benefits of R Markdown are best appreciated when using it within RStudio. If you don't already have RStudio, you can download it from the following [link](https://www.rstudio.com/products/rstudio/download/). 
+
+RStudio is an easy to use graphical user interface for running R. It allows you to view scripts, the console, your environment and plots all within one window. For more details on this, see our workshop on [Version Control with RStudio and Github[https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T1-GitHubVersionControl/VersionControl/].
+
+Once RStudio is installed and running, your window should look something like this:
+
+INSERT SCREENSHOT
+
+As well as installing RStudio, you'll need to have the package for rmarkdown installed. To do this, in the console panel, run:
+```
+install.packages("rmarkdown")
+```
+
+You should now be able to open a new R Markdown file. To do this go to the "Open" symbol in the top left hand corner and select "R Markdown"
+
+<p align=center>
+<img src="./Images/Open_Markdown.png">
+</p>
 
 ## Code Blocks and Plots
 
