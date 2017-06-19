@@ -45,6 +45,21 @@ You should now be able to open a new R Markdown file. To do this go to the "Open
 <img src="./Images/Open_Markdown.png">
 </p>
 
+The following window then asks you for a title, the author and what format you'd like the final rendered file to be. All of these elements can be changed later if you change your mind. You can also see from the left hand tab that R Markdown can be used to make other things besides documents, including presentations and shiny apps.
+
+Give the document an appropriate name and choose "HTML" as the output format:
+
+<p align=center>
+<img src="./Images/New_Markdown.png">
+</p>
+
+The new R Markdown file should now have opened on the left hand side, above the console window. A template R Markdown script is provided. This includes the set up information at the top of the page. This is used by knitr during rendering to produce the correct file format. Text and code blocks are also included, and these will be explained in more detail below. 
+
+<p align=center>
+<img src="./Images/New_Markdown_v2.png">
+</p>
+
+
 ## Code Blocks and Plots
 
 ## Formatting
