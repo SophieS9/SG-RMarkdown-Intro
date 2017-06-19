@@ -30,9 +30,11 @@ RStudio is an easy to use graphical user interface for running R. It allows you 
 
 Once RStudio is installed and running, your window should look something like this:
 
-INSERT SCREENSHOT
+<p align=center>
+<img src="./Images/RStudio.png">
+</p>
 
-As well as installing RStudio, you'll need to have the package for rmarkdown installed. To do this, in the console panel, run:
+As well as installing RStudio, you'll need to have the package for rmarkdown installed. To do this, in the console panel (on the left), run:
 ```
 install.packages("rmarkdown")
 ```
@@ -48,6 +50,8 @@ You should now be able to open a new R Markdown file. To do this go to the "Open
 ## Formatting
 
 ## Inserting Images
+
+## Inserting Tables
  
 ## Inserting Citations
 
