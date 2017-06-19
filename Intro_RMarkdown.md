@@ -60,8 +60,9 @@ The new R Markdown file should now have opened on the left hand side, above the 
 </p>
 
 
-## Code Blocks and Plots
+## Code Chunks and Plots
 
+The template R Markdown script includes three code chunks. You can specify a code chunk by starting it ```{r} and ending it with ```. 
 ## Formatting
 
 ## Inserting Images
