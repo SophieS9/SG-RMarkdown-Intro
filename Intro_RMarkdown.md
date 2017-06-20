@@ -72,9 +72,10 @@ This runs the code within the console and output that would have been printed in
  
 The {r} part of the code block can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code block is as follows:
 ```
-\```{r pressure, echo=FALSE}
+
+```{r pressure, echo=FALSE}
 plot(pressure)
-\```
+```
 
 ``` 
 ## Formatting
