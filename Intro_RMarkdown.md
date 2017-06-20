@@ -71,13 +71,11 @@ The template R Markdown script includes three code chunks. You can specify a cod
 This runs the code within the console and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Have a go at running the code blocks which have been provided by the default template.
  
 The {r} part of the code block can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code block is as follows:
-```
-
+`
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
-
-``` 
+` 
 ## Formatting
 
 ## Inserting Images
