@@ -62,7 +62,21 @@ The new R Markdown file should now have opened on the left hand side, above the 
 
 ## Code Chunks and Plots
 
-The template R Markdown script includes three code chunks. You can specify a code chunk by starting it \```{r} and ending it with \```. 
+The template R Markdown script includes three code chunks. You can specify a code chunk by starting it \```{r} and ending it with \```. Code within these blocks can be run within the console by either selecting the "Run" option at the top of the window or by clicking on the green arrow within the code chunk:
+
+<p align=center>
+<img src="./Images/Run_Chunks.png">
+</p>
+
+This runs the code within the console and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Have a go at running the code blocks which have been provided by the default template.
+ 
+The {r} part of the code block can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code block is as follows:
+```
+\```{r pressure, echo=FALSE}
+plot(pressure)
+\```
+
+``` 
 ## Formatting
 
 ## Inserting Images
