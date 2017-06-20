@@ -70,10 +70,24 @@ The template R Markdown script includes three code chunks. You can specify a cod
 
 This runs the code within the console and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Have a go at running the code blocks which have been provided by the default template.
  
+The first code chunk:
+```` 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+``` 
+````
+is used to specify any global settings to be applied to the markdown. The example sets all code chunks as "echo=TRUE", meaning they will be included in the final rendered version. You can specify other settings in this code chunk, such as the working directory. 
+
 The {r} part of the code block can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code block is as follows:
-```` ```{r pressure, echo=FALSE}
+```` 
+```{r pressure, echo=FALSE}
 plot(pressure)
-``` ```` 
+``` 
+````
+The code chunk has been given the name "pressure" as well as having the parameter "echo=FALSE". This will prevent the code chunk from being printed when the markdown script is rendered to a different file format. Additional parameters can include "fig.height=" and "fig.width=" which specify how big a plot should be. 
+
+Have a go at making some code chunks of your own. 
+
 ## Formatting
 
 ## Inserting Images
