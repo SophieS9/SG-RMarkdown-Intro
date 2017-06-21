@@ -110,8 +110,8 @@ legend("topleft", legend=c("Group","Control","Treatment1","Treatment2"), pch=c(N
 In between your code chunks you can put any text you like. This can be explanatory text, figure legends, anything you want! Although having code chunks and outputs together in one document is a great aspect of R markdown, the best part is actually the ability to turn your R markdown document into another format, such as HTML, PDF or word. In this final document you're going to want to have your text elements formatted. You might want headers, bold text, italics, bullet point lists etc... R markdown allows for this, you just have to add markdown syntax to specify how you want the document. 
 
 Here are some examples. Add these to your R markdown document.
-* Headers
-Headers are specified by starting the line with hash \#. A single hash specifies header one (the biggest), two hashes specifies header two (a bit smaller), three hashes make the header a bit smaller still and so on:
+### Headers
+Headers are specified by starting the line with hash (\#). A single hash specifies header one (the biggest), two hashes specifies header two (a bit smaller), three hashes make the header a bit smaller still and so on:
 \# Header One #Header One
 
 ## Inserting Images
