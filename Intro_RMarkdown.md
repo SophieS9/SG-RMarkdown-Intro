@@ -118,16 +118,16 @@ Here are some examples. Add these to your R markdown document. In each case I've
 \### Header Three
 ### Header Three
 
-\**Bold text**
+\**Bold text**  
 **Bold text**
 
-\*italic text*
+\*italic text*  
 *italic text*
 
-\--strikethrough--
+\--strikethrough--  
 --strikethrough--
 
-\superscript^2^
+\superscript^2^  
 superscript^2^  
 
 \* Bullet points
@@ -136,7 +136,7 @@ superscript^2^
 \1. Numbered list
 1. Numbered list
 
-\[Hyperlink](www.google.com)
+\[Hyperlink](www.google.com)  
 [Hyperlink](www.google.com)  
 
 ## Inserting Images
