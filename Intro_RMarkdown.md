@@ -87,19 +87,19 @@ plot(pressure)
 The code chunk has been given the name "pressure" as well as having the parameter "echo=FALSE". This will prevent the code chunk from being printed when the markdown script is rendered to a different file format. Additional parameters can include "fig.height=" and "fig.width=" which specify how big a plot should be. 
 
 Have a go at making some code chunks of your own. Here are some ideas if you're stuck, otherwise create chunks containing your own code:
-*Plotting the cars data, with the figure size set:
+* Plotting the cars data, with the figure size set:
 ````
 ```{r plot_cars, fig.height=3, fig.width=3}
 plot(cars)
 ```
 ````
-*Summarising the built-in PlantGrowth data set:
+* Summarising the built-in PlantGrowth data set:
 ````
 ```{r plantsummary}
 summary(PlantGrowth)
 ```
 ````
-*Box plot of PlantGrowth data:
+* Box plot of PlantGrowth data:
 ````
 ```{r plant_box, fig.height=6, fig.width=6}
 boxplot(weight ~ group, PlantGrowth, col=c("pink","lightgreen","purple"))
