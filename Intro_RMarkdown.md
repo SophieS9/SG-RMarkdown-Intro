@@ -146,7 +146,7 @@ So far example, if I had the following image of my coding cat saved in ~/Documen
 \!\[](~/Documents/AberdeenStudyGroup/coding_cat.png)
 
 <p align=center>
-<img src="./Images/coding_cat.png>
+<img src="./Images/coding_cat.png">
 </p>
 
 Add an image to your markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
