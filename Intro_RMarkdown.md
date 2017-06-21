@@ -137,11 +137,11 @@ superscript<sup>2</sup>
 [Hyperlink](www.google.com)  
 
 ## Inserting Images
-Sometimes you might want to add an image into your final document. This could be a figure that you've made outside of R for example. This is easy to add in using R Markdown. You need to use the following syntax:
+Sometimes you might want to add an image into your final document. For example, his could be a figure that you've made outside of R. This is easy to add to your document using R Markdown. You need to use the following syntax:
 
 \!\[](path/to/image.png)
 
-So far example, if I had the following image of my coding cat saved in ~/Documents/AberdeenStudyGroup, I'd insert this image into my R markdown as follows:
+So far example, if I had the following image of a coding cat saved in ~/Documents/AberdeenStudyGroup, I'd insert this image into my R markdown script as follows:
 
 \!\[](~/Documents/AberdeenStudyGroup/coding_cat.png)
 
@@ -152,6 +152,18 @@ So far example, if I had the following image of my coding cat saved in ~/Documen
 Add an image to your markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
 
 ## Inserting Tables
+Tables have not been made part of the native markdown code but people have made ways around this. There are several different options to add tables in. You can use the \| and \- syntax, where each row is separated with dashes and each column of a table is divided by a \|. Like this:
+
+\| Table Header 1 |  Table Header 2|
+\| -------------- | -------------- |
+\| Row One        | Row One        |
+
+This makes:
+
+| Table Header 1 |  Table Header 2|
+| -------------- | -------------- |
+| Row One        | Row One        |
+
  
 ## Inserting Citations
 
