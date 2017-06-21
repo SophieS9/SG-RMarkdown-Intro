@@ -118,7 +118,7 @@ Here are some examples. Add these to your R markdown document. In each case I've
 \### Header Three
 ### Header Three
 
-\**Bold text**  
+\*\*Bold text\*\*  
 **Bold text**
 
 \*italic text*  
