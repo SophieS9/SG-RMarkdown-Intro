@@ -68,7 +68,7 @@ The template R Markdown script includes three code chunks. You can specify a cod
 <img src="./Images/Run_Chunks.png">
 </p>
 
-This runs the code within the console and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Have a go at running the code blocks which have been provided by the default template.
+This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Have a go at running the code chunks which have been provided by the default template.
  
 The first code chunk:
 ```` 
@@ -78,7 +78,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ````
 is used to specify any global settings to be applied to the markdown. The example sets all code chunks as "echo=TRUE", meaning they will be included in the final rendered version. You can specify other settings in this code chunk, such as the working directory. 
 
-The {r} part of the code block can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code block is as follows:
+The {r} part of the code chunk can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code chuck is as follows:
 ```` 
 ```{r pressure, echo=FALSE}
 plot(pressure)
@@ -86,8 +86,26 @@ plot(pressure)
 ````
 The code chunk has been given the name "pressure" as well as having the parameter "echo=FALSE". This will prevent the code chunk from being printed when the markdown script is rendered to a different file format. Additional parameters can include "fig.height=" and "fig.width=" which specify how big a plot should be. 
 
-Have a go at making some code chunks of your own. 
-
+Have a go at making some code chunks of your own. Here are some ideas if you're stuck, otherwise create chunks containing your own code:
+*Plotting the cars data, with the figure size set:
+````
+```{r plot_cars, fig.height=3, fig.width=3}
+plot(cars)
+```
+````
+*Summarising the built-in PlantGrowth data set:
+````
+```{r plantsummary}
+summary(PlantGrowth)
+```
+````
+*Box plot of PlantGrowth data:
+````
+```{r plant_box, fig.height=6, fig.width=6}
+boxplot(weight ~ group, PlantGrowth, col=c("pink","lightgreen","purple"))
+legend("topleft", legend=c("Group","Control","Treatment1","Treatment2"), pch=c(NA,19,19,19), col=c(NA,"pink","lightgreen","purple"))
+```
+````
 ## Formatting
 
 ## Inserting Images
