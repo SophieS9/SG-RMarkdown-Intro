@@ -139,12 +139,17 @@ superscript<sup>2</sup>
 ## Inserting Images
 Sometimes you might want to add an image into your final document. This could be a figure that you've made outside of R for example. This is easy to add in using R Markdown. You need to use the following syntax:
 
-\![](path/to/image.png)
+\!\[](path/to/image.png)
 
 So far example, if I had the following image of my coding cat saved in ~/Documents/AberdeenStudyGroup, I'd insert this image into my R markdown as follows:
 
-\![](~/Documents/AberdeenStudyGroup/coding_cat.png)
+\!\[](~/Documents/AberdeenStudyGroup/coding_cat.png)
 
+<p align=center>
+<img src="./Images/coding_cat.png>
+</p>
+
+Add an image to your markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
 
 ## Inserting Tables
  
