@@ -125,16 +125,13 @@ Here are some examples. Add these to your R markdown document. In each case I've
 *italic text*
 
 \--strikethrough--  
---strikethrough--
+~~strikethrough~~
 
-\superscript^2^  
 superscript^2^  
+superscript<sup>2</sup>  
 
 \* Bullet points
 * Bullet points
-
-\1. Numbered list
-1. Numbered list
 
 \[Hyperlink](www.google.com)  
 [Hyperlink](www.google.com)  
