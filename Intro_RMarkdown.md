@@ -154,15 +154,24 @@ Add an image to your markdown file. Either take a copy of coding cat, use your o
 ## Inserting Tables
 Tables have not been made part of the native markdown code but people have made ways around this. There are several different options to add tables in. You can use the \| and \- syntax, where each row is separated with dashes and each column of a table is divided by a \|. Like this:
 
-\| Table Header 1 |  Table Header 2|
-\| -------------- | -------------- |
-\| Row One        | Row One        |
+\| Table Header 1 |  Table Header 2|  
+\| -------------- | -------------- |  
+\| Row One        | Row One        |  
 
 This makes:
 
 | Table Header 1 |  Table Header 2|
 | -------------- | -------------- |
 | Row One        | Row One        |
+
+But this is a bit tedious, especially if you have a large table! A better way to do this is by using one of several functions available in R packages. The below example is using the function kable that comes as a part of the knitr package, but there are lots of others available, all with slightly different functionality!
+
+For this, you need to add a code chunk:
+````
+```{r table}
+kable(cars)
+```
+````
 
  
 ## Inserting Citations
