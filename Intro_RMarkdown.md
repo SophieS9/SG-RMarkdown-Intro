@@ -68,7 +68,7 @@ The template R Markdown script includes three code chunks. You can specify a cod
 <img src="./Images/Run_Chunks.png">
 </p>
 
-This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Have a go at running the code chunks which have been provided by the default template.
+This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Code chunks can contain anything that would run in the console, as well as comments lines that start with a hash. The can have as many lines of code as you like. Have a go at running the code chunks which have been provided by the default template.
  
 The first code chunk:
 ```` 
