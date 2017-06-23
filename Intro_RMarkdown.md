@@ -179,13 +179,15 @@ As with all R functions, you can add parameters to format the table such as addi
 ```{r table2}
 kable(PlantGrowth, col.names=c("Weight", "Group"), align=c("c","c"), caption = "Table 2. Plant Growth Data")
 ```
-````  
+````
+Remember that once you've written your code chunk you need to run it to see the output in the document!  
 
-Add a two tables to your R markdown script. Try manually building one with pipes and dashes and try using kable. You made need to install the knitr package if you don't have this already as follows:
+Add two tables to your R markdown script. Try manually building one with pipes and dashes and try using kable. You made need to install the knitr package if you don't have this already as follows:
 ```
 install.packages("knitr")
 ``` 
 
 ## Inserting Citations
+Recently I've come across a handy tool, citr, which allows you to add citations to an R markdown script. It then manually builds a reference list at the end of the document when you render it. As the tool requeires you to make a ".bib" file from your referencing software (such as Mendeley) and this could be different for everyone, I won't run through an example today. You should have a look at the [citr github page](https://github.com/crsh/citr) and can add this to your R markdown scripts in future.
 
 ## Rendering R Markdown into Documents
