@@ -40,7 +40,7 @@ As well as installing RStudio, you'll need to have the package for rmarkdown ins
 install.packages("rmarkdown")
 ```
 
-You should now be able to open a new R Markdown file. To do this go to the "Open" symbol in the top left hand corner and select "R Markdown"
+You should now be able to open a new R Markdown file. To do this go, to the "Open" symbol in the top left hand corner and select "R Markdown"
 
 <p align=center>
 <img src="./Images/Open_Markdown.png">
@@ -69,7 +69,7 @@ The template R Markdown script includes three code chunks. You can specify a cod
 <img src="./Images/Run_Chunks.png">
 </p>
 
-This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Code chunks can contain anything that would run in the console, as well as comments lines that start with a hash. The can have as many lines of code as you like. Have a go at running the code chunks which have been provided by the default template.
+This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R Markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Code chunks can contain anything that would run in the console, as well as comment lines that start with a hash. The code chunk can have as many lines of code as you like. Have a go at running the code chunks which have been provided by the default template.
  
 The first code chunk:
 ```` 
@@ -77,15 +77,15 @@ The first code chunk:
 knitr::opts_chunk$set(echo = TRUE)
 ``` 
 ````
-is used to specify any global settings to be applied to the markdown. The example sets all code chunks as "echo=TRUE", meaning they will be included in the final rendered version. You can specify other settings in this code chunk, such as the working directory. 
+is used to specify any global settings to be applied to the R Markdown script. The example sets all code chunks as "echo=TRUE", meaning they will be included in the final rendered version. You can specify other settings in this code chunk, such as the working directory. 
 
-The {r} part of the code chunk can be used to specify elements for when the R markdown file is rendered into a different format. You can see the third code chuck is as follows:
+The {r} part of the code chunk can be used to specify elements for when the R Markdown file is rendered into a different format. You can see the third code chuck is as follows:
 ```` 
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ``` 
 ````
-The code chunk has been given the name "pressure" as well as having the parameter "echo=FALSE". This will prevent the code chunk from being printed when the markdown script is rendered to a different file format. Additional parameters can include "fig.height=" and "fig.width=" which specify how big a plot should be. 
+The code chunk has been given the name "pressure" as well as having the parameter "echo=FALSE". This will prevent the code chunk from being printed when the R Markdown script is rendered to a different file format. Additional parameters can include "fig.height=" and "fig.width=" which specify how big a plot should be. 
 
 Have a go at making some code chunks of your own. Here are some ideas if you're stuck, otherwise create chunks containing your own code:
 * Plotting the cars data, with the figure size set:
@@ -108,9 +108,9 @@ legend("topleft", legend=c("Group","Control","Treatment1","Treatment2"), pch=c(N
 ```
 ````
 ## Adding and Formatting Text
-In between your code chunks you can put any text you like. This can be explanatory text, figure legends, anything you want! Although having code chunks and outputs together in one document is a great aspect of R markdown, the best part is actually the ability to turn your R markdown document into another format, such as HTML, PDF or word. In this final document you're going to want to have your text elements formatted. You might want headers, bold text, italics, bullet point lists etc... R markdown allows for this, you just have to add markdown syntax to specify how you want the document. 
+In between your code chunks you can put any text you like. This can be explanatory text, figure legends, anything you want! Although having code chunks and outputs together in one document is a great aspect of R Markdown, the best part is actually the ability to turn your R Markdown document into another format, such as HTML, PDF or word. In this final document you're going to want to have your text elements formatted. You might want headers, bold text, italics, bullet point lists etc... R Markdown allows for this, you just have to add markdown syntax to specify how you want the document. 
 
-Here are some examples. Add these to your R markdown document. In each case I've written what you should be adding to your R markdown script on the first line, and then how this is rendered on the line below. 
+Here are some examples. Add these to your R Markdown document. In each case I've written what you should be adding to your R Markdown script on the first line, and then how this is rendered on the line below. 
 
 \# Header One 
 # Header One
@@ -138,24 +138,24 @@ superscript<sup>2</sup>
 [Hyperlink](www.google.com)  
 
 ## Inserting Images
-Sometimes you might want to add an image into your final document. For example, his could be a figure that you've made outside of R. This is easy to add to your document using R Markdown. You need to use the following syntax:
+Sometimes you might want to add an image into your final document. For example, this could be a figure that you've made outside of R. This is easy to add to your document using R Markdown. You need to use the following syntax:
 
 \!\[](path/to/image.png)
 
-So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R markdown script as follows:
+So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R Markdown script as follows:
 
 \!\[](/users/s10ss5/Documents/AberdeenStudyGroup/coding_cat.png)
 
-NOTE! Using tilde (~) in the path to specify home won't wory here!
+NOTE! Using tilde (~) in the path to specify home won't work here!
 
 <p align=center>
 <img src="./Images/coding_cat.png">
 </p>
 
-Add an image to your markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
+Add an image to your R Markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
 
 ## Inserting Tables
-Tables have not been made part of the native markdown code but people have made ways around this. There are several different options to add tables in. You can use the \| and \- syntax, where each row is separated with dashes and each column of a table is divided by a \|. Like this:
+Tables have not been made part of the native markdown code but people have developed ways around this. There are several different options to add tables in. You can use the pipe (\|) and dash (\-) syntax, where each row is separated with dashes and each column of a table is divided by a pipe. Like this:
 
 \| Table Header 1 | Table Header 2 |  
 \| -------------- | -------------- |  
@@ -169,7 +169,7 @@ This makes:
 
 But this is a bit tedious, especially if you have a large table! A better way to do this is by using one of several functions available in R packages. The below example is using the function kable that comes as a part of the knitr package, but there are lots of others available, all with slightly different functionality!
 
-For this, you need to add a code chunk. In this example we will put the built-in Cars data into a table. First of all you need to load the knitr library and then you can use kable to add the table:
+For this, you need to add a code chunk. The data that you want to be presented in a table needs to be within a R object as either a data.frame or a matrix. In this example we will put the built-in Cars data into a table. First of all you need to load the knitr library and then you can use kable to add the table:
 ````
 ```{r table}
 library(knitr)
@@ -185,22 +185,24 @@ kable(PlantGrowth, col.names=c("Weight", "Group"), align=c("c","c"), caption = "
 ````
 Remember that once you've written your code chunk you need to run it to see the output in the document!  
 
-Add two tables to your R markdown script. Try manually building one with pipes and dashes and try using kable. You made need to install the knitr package if you don't have this already as follows:
+Add two tables to your R Markdown script. Try manually building one with pipes and dashes and try using kable. You made need to install the knitr package if you don't have this already as follows:
 ```
 install.packages("knitr")
 ``` 
 
 ## Inserting Citations
-Recently I've come across a handy tool, citr, which allows you to add citations to an R markdown script. It then manually builds a reference list at the end of the document when you render it. As the tool requires you to make a ".bib" file from your referencing software (such as Mendeley) and this could be different for everyone, I won't run through an example today. You should have a look at the [citr github page](https://github.com/crsh/citr) and you can add this to your R markdown scripts in future.
+Recently I've come across a handy tool, citr, which allows you to add citations to an R Markdown script. It then manually builds a reference list at the end of the document when you render it. As the tool requires you to make a ".bib" file from your referencing software (such as Mendeley) and this could be different for everyone, I won't run through an example today. You should have a look at the [citr github page](https://github.com/crsh/citr) and you can add this to your R Markdown scripts in future.
 
 ## Rendering R Markdown into Documents
-We're now onto the final (and most exciting) part, rendering your R markdown script into a html document. This is very simple to do, just click on "Knit" button at the top of the R markdown script:
+We're now onto the final (and most exciting) part, rendering your R Markdown script into a html document. This is very simple to do, just click on "Knit" button at the top of the R Markdown script:
 
 <p align=center>
 <img src="./Images/knit.png">
 </p>
 
-After a few seconds a html document should appear containing all of the code chunks and their respectively outputs as well as any formatted text and images that you added to the document. If there are any issues whilst rendering the R markdown code, these will appear in the console. For example, code chunks that install packages are unable to be rendered into a document and will need to be commented out. 
+After a few seconds a html document should appear containing all of the code chunks and their respective outputs as well as any formatted text and images that you added to the document. If there are any issues whilst rendering the R Markdown code, these will appear in the console. For example, code chunks that install packages are unable to be rendered into a document and will need to be commented out. 
+
+Have a go at changing the output format to pdf_document at the top of your script and then rendering the R Markdown script again with Knit to see the difference in the output formats. 
 
 ## Well Done!
-You've now written your first R markdown script and rendered this into a html format. Remember that other output formats are available such as word and PDF. This is also just an introduction, there are many other things that you can do with R markdown, but hopefully you're now inspired to explore these more! 
+You've now written your first R Markdown script and rendered this into a html format. Remember that other output formats are available such as word and PDF. This is also just an introduction, there are many other things that you can do with R Markdown, but hopefully you're now inspired to explore these more! 
