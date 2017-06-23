@@ -154,9 +154,9 @@ Add an image to your markdown file. Either take a copy of coding cat, use your o
 ## Inserting Tables
 Tables have not been made part of the native markdown code but people have made ways around this. There are several different options to add tables in. You can use the \| and \- syntax, where each row is separated with dashes and each column of a table is divided by a \|. Like this:
 
-\| Table Header 1	| Table Header 2	|  
-\| -------------- 	| -------------- 	|  
-\| Row One        	| Row One        	|  
+\| Table Header 1 | Table Header 2 |  
+\| -------------- | -------------- |  
+\| Row One        | Row One        |  
 
 This makes:
 
@@ -166,14 +166,26 @@ This makes:
 
 But this is a bit tedious, especially if you have a large table! A better way to do this is by using one of several functions available in R packages. The below example is using the function kable that comes as a part of the knitr package, but there are lots of others available, all with slightly different functionality!
 
-For this, you need to add a code chunk:
+For this, you need to add a code chunk. In this example we will put the built-in Cars data into a table. First of all you need to load the knitr library and then you can use kable to add the table:
 ````
 ```{r table}
+library(knitr)
 kable(cars)
 ```
 ````
 
- 
+As with all R functions, you can add parameters to format the table such as adding a title, aligning the text or setting the column names. Here is an example using the PlantGrowth data (as I've already loaded the knitr package, I don't need to do it again).
+````
+```{r table2}
+kable(PlantGrowth, col.names=c("Weight", "Group"), align=c("c","c"), caption = "Table 2. Plant Growth Data")
+```
+````  
+
+Add a two tables to your R markdown script. Try manually building one with pipes and dashes and try using kable. You made need to install the knitr package if you don't have this already as follows:
+```
+install.packages("knitr")
+``` 
+
 ## Inserting Citations
 
 ## Rendering R Markdown into Documents
