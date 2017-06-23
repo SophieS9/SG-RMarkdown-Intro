@@ -54,7 +54,7 @@ Give the document an appropriate name and choose "HTML" as the output format:
 <img src="./Images/New_Markdown.png">
 </p>
 
-The new R Markdown file should now have opened on the left hand side, above the console window. A template R Markdown script is provided. This includes the set up information at the top of the page. This is used by knitr during rendering to produce the correct file format. Text and code blocks are also included, and these will be explained in more detail below. 
+The new R Markdown file should now have opened on the left hand side, above the console window. A template R Markdown script is provided. This includes the set up information at the top of the page in between two lines of three dashes. More setup options can be added if needed. This is used by knitr during rendering to produce the correct file format. Text and code blocks are also included, and these will be explained in more detail below. 
 
 <p align=center>
 <img src="./Images/New_Markdown_v2.png">
@@ -69,7 +69,7 @@ The template R Markdown script includes three code chunks. You can specify a cod
 <img src="./Images/Run_Chunks.png">
 </p>
 
-This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R Markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Code chunks can contain anything that would run in the console, as well as comment lines that start with a hash. The code chunk can have as many lines of code as you like. Have a go at running the code chunks which have been provided by the default template.
+This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R Markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Code chunks can contain anything that would run in the console, as well as comment lines that start with a hash. The code chunk can have as many lines of code as you like and can be edited and re-run infinite times. Have a go at running the code chunks which have been provided by the default template.
  
 The first code chunk:
 ```` 
@@ -107,6 +107,21 @@ boxplot(weight ~ group, PlantGrowth, col=c("pink","lightgreen","purple"))
 legend("topleft", legend=c("Group","Control","Treatment1","Treatment2"), pch=c(NA,19,19,19), col=c(NA,"pink","lightgreen","purple"))
 ```
 ````
+
+For the more advanced programmer, as well as R code chunks, R Markdown allows you to add code chunks in bash and python languages like the examples below. It also allows for many other languages including SQL, Rcpp, Stan, JavaScript and CSS:
+````
+```{bash}
+ls *.Rmd
+```
+````
+
+````
+```{python}
+x='hello world!'
+print(x)
+```
+````  
+
 ## Adding and Formatting Text
 In between your code chunks you can put any text you like. This can be explanatory text, figure legends, anything you want! Although having code chunks and outputs together in one document is a great aspect of R Markdown, the best part is actually the ability to turn your R Markdown document into another format, such as HTML, PDF or word. In this final document you're going to want to have your text elements formatted. You might want headers, bold text, italics, bullet point lists etc... R Markdown allows for this, you just have to add markdown syntax to specify how you want the document. 
 
@@ -200,7 +215,12 @@ We're now onto the final (and most exciting) part, rendering your R Markdown scr
 <img src="./Images/knit.png">
 </p>
 
-After a few seconds a html document should appear containing all of the code chunks and their respective outputs as well as any formatted text and images that you added to the document. If there are any issues whilst rendering the R Markdown code, these will appear in the console. For example, code chunks that install packages are unable to be rendered into a document and will need to be commented out. 
+After a few seconds a html document should appear containing all of the code chunks and their respective outputs as well as any formatted text and images that you added to the document. If there are any issues whilst rendering the R Markdown code, these will appear in the console. For example, code chunks that install packages are unable to be rendered into a document and will need to be commented out.
+
+If you're not using RStudio, you can still render your R Markdown script by simply running the following command in the console:
+```
+render("example_markdown.Rmd")
+``` 
 
 Have a go at changing the output format to pdf_document at the top of your script and then rendering the R Markdown script again with Knit to see the difference in the output formats. 
 
