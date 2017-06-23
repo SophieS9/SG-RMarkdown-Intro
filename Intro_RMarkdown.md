@@ -154,9 +154,9 @@ Add an image to your markdown file. Either take a copy of coding cat, use your o
 ## Inserting Tables
 Tables have not been made part of the native markdown code but people have made ways around this. There are several different options to add tables in. You can use the \| and \- syntax, where each row is separated with dashes and each column of a table is divided by a \|. Like this:
 
-\| Table Header 1 |  Table Header 2|  
-\| -------------- | -------------- |  
-\| Row One        | Row One        |  
+\| Table Header 1	| Table Header 2	|  
+\| -------------- 	| -------------- 	|  
+\| Row One        	| Row One        	|  
 
 This makes:
 
