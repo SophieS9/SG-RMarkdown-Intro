@@ -41,3 +41,27 @@ summary(PlantGrowth)
 boxplot(weight ~ group, PlantGrowth, col=c("pink","lightgreen","purple"))
 legend("topleft", legend=c("Group","Control","Treatment1","Treatment2"), pch=c(NA,19,19,19), col=c(NA,"pink","lightgreen","purple"))
 ```
+
+### Header 1
+## Header 2
+# Header 3
+
+**Bold**  
+*italic*  
+~~strikethrough~~  
+superscript^2^  
+[Hyperlink](www.google.com)  
+
+* Bullet One
+* Bullet Two
+
+![](/users/s10ss5/Documents/AberdeenStudyGroup/SG-RMarkdown-Intro/Images/coding_cat.png)  
+
+```{r table}
+library(knitr)
+kable(cars)
+```
+
+```{r table2}
+kable(PlantGrowth, col.names=c("Weight", "Group"), align=c("c","c"), caption = "Table 2. Plant Growth Data")
+```

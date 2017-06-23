@@ -141,9 +141,11 @@ Sometimes you might want to add an image into your final document. For example, 
 
 \!\[](path/to/image.png)
 
-So far example, if I had the following image of a coding cat saved in ~/Documents/AberdeenStudyGroup, I'd insert this image into my R markdown script as follows:
+So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R markdown script as follows:
 
-\!\[](~/Documents/AberdeenStudyGroup/coding_cat.png)
+\!\[](/users/s10ss5/Documents/AberdeenStudyGroup/coding_cat.png)
+
+NOTE! Using tilde (~) in the path to specify home won't wory here!
 
 <p align=center>
 <img src="./Images/coding_cat.png">
@@ -188,6 +190,16 @@ install.packages("knitr")
 ``` 
 
 ## Inserting Citations
-Recently I've come across a handy tool, citr, which allows you to add citations to an R markdown script. It then manually builds a reference list at the end of the document when you render it. As the tool requeires you to make a ".bib" file from your referencing software (such as Mendeley) and this could be different for everyone, I won't run through an example today. You should have a look at the [citr github page](https://github.com/crsh/citr) and can add this to your R markdown scripts in future.
+Recently I've come across a handy tool, citr, which allows you to add citations to an R markdown script. It then manually builds a reference list at the end of the document when you render it. As the tool requires you to make a ".bib" file from your referencing software (such as Mendeley) and this could be different for everyone, I won't run through an example today. You should have a look at the [citr github page](https://github.com/crsh/citr) and you can add this to your R markdown scripts in future.
 
 ## Rendering R Markdown into Documents
+We're now onto the final (and most exciting) part, rendering your R markdown script into a html document. This is very simple to do, just click on "Knit" button at the top of the R markdown script:
+
+<p align=center>
+<img src="./Images/knit.png">
+</p>
+
+After a few seconds a html document should appear containing all of the code chunks and their respectively outputs as well as any formatted text and images that you added to the document. If there are any issues whilst rendering the R markdown code, these will appear in the console. For example, code chunks that install packages are unable to be rendered into a document and will need to be commented out. 
+
+## Well Done!
+You've now written your first R markdown script and rendered this into a html format. Remember that other output formats are available such as word and PDF. This is also just an introduction, there are many other things that you can do with R markdown, but hopefully you're now inspired to explore these more! 
