@@ -224,7 +224,7 @@ If you're not using RStudio, you can still render your R Markdown script by simp
 render("example_markdown.Rmd")
 ``` 
 
-Have a go at changing the output format to pdf_document at the top of your script and then rendering the R Markdown script again with Knit to see the difference in the output formats. 
+Have a go at changing the output format to pdf_document at the top of your script and then rendering the R Markdown script again with Knit to see the difference in the output formats. NOTE! To render into PDF format, you may need to download some additional software. This will be described in the error message within the console when you try to knit the document.
 
 ## Well Done!
 You've now written your first R Markdown script and rendered this into a html format. Remember that other output formats are available such as word and PDF. This is also just an introduction, there are many other things that you can do with R Markdown, but hopefully you're now inspired to explore these more! 
