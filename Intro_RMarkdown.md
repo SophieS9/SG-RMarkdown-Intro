@@ -157,7 +157,7 @@ Sometimes you might want to add an image into your final document. For example, 
 
 \!\[](path/to/image.png)
 
-So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R Markdown script as follows. This is added as part of the text and NOT within a code block:
+So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R Markdown script as follows. This is added as part of the text and NOT within a code chunk:
 
 \!\[](/users/s10ss5/Documents/AberdeenStudyGroup/coding_cat.png)
 
@@ -172,7 +172,7 @@ NOTE!
 Add an image to your R Markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
 
 ## Inserting Tables
-Tables have not been made part of the native markdown code but people have developed ways around this. There are several different options to add tables in. You can use the pipe (\|) and dash (\-) syntax, where each row is separated with dashes and each column of a table is divided by a pipe. Like this:
+Tables have not been made part of the native markdown code but people have developed ways around this. There are several different options to add tables in. You can use the pipe (\|) and dash (\-) syntax, where each row is separated with dashes and each column of a table is divided by a pipe. Like this (again this is added as part of the text and not within a code chunk):
 
 \| Table Header 1 | Table Header 2 |  
 \| -------------- | -------------- |  
