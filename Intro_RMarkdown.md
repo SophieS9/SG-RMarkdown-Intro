@@ -157,11 +157,13 @@ Sometimes you might want to add an image into your final document. For example, 
 
 \!\[](path/to/image.png)
 
-So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R Markdown script as follows:
+So far example, if I had the following image of a coding cat saved in /users/s10ss5/Documents/AberdeenStudyGroup, I'd insert this image into my R Markdown script as follows. This is added as part of the text and NOT within a code block:
 
 \!\[](/users/s10ss5/Documents/AberdeenStudyGroup/coding_cat.png)
 
-NOTE! Using tilde (~) in the path to specify home won't work here!
+NOTE! 
+* Using tilde (~) in the path to specify home won't work here!
+* I use a Mac so the path to my image has forward slashes (this is the same for Linux). If you are using Windows, your path will need back slashes. 
 
 <p align=center>
 <img src="./Images/coding_cat.png">
